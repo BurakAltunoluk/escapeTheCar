@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Escape_the_Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roadBirdEye" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-15-s7q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car2" translatesAutoresizingMaskIntoConstraints="NO" id="MMX-Nm-PQv">
+                                <rect key="frame" x="270" y="71" width="70" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car1" translatesAutoresizingMaskIntoConstraints="NO" id="pob-UF-4mC">
+                                <rect key="frame" x="86" y="71" width="70" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myCar1" translatesAutoresizingMaskIntoConstraints="NO" id="CzF-73-KJE">
+                                <rect key="frame" x="265" y="449" width="81" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ka9-15-s7q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5CE-1N-at5"/>
+                            <constraint firstItem="ka9-15-s7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ip-GE-qV1"/>
+                            <constraint firstAttribute="bottom" secondItem="ka9-15-s7q" secondAttribute="bottom" id="gsp-EO-TL6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ka9-15-s7q" secondAttribute="trailing" id="js2-5y-wOf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenCar" destination="pob-UF-4mC" id="U7z-qf-Iqk"/>
+                        <outlet property="myCar" destination="CzF-73-KJE" id="0yT-kl-fCd"/>
+                        <outlet property="roadImage" destination="ka9-15-s7q" id="1P1-fN-bf8"/>
+                        <outlet property="yellowCar" destination="MMX-Nm-PQv" id="dOd-QE-iJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car1" width="369" height="676"/>
+        <image name="car2" width="396" height="630"/>
+        <image name="myCar1" width="423" height="590"/>
+        <image name="roadBirdEye" width="462" height="611"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
